@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* flex-direction: column; */
+}
+/* .banner{
+    position: relative;
+} */
+.hamb{
+    color: inherit;
+    position: absolute;
+    right: 20px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    /* flex-grow: 1; */
+    /* text-align: justify; */
+}
+li{
+    list-style: none;
+    /* position: absolute;
+    right: 30px; */
+}
+/* .link-style{
+    display: none;
+} */
+/* .link-style.active{
+    display: block;
+} */
+
+@media screen and (max-width:500px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* .banner h2{
+        text-align: left;
+    } */
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    ul li{
+        padding: 10px;
+        width: auto;
+        cursor: pointer;
+        align-items: stretch;
+
+    }
+
+    .link-style{
+        display: none;
+        /* transition: 1s ease; */
+    }
+    .link-style.active{
+        display: block;
+    }
+
+
+}.main-hero{
+    width: 100%;
+    height: 50vh;
+}
+.main-img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.images{
+    width: 300px;
+    transition: all 0.5s;
+}
+body{
+    background-color: rgb(210, 205, 205) ;
+}
+.grid{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(210, 205, 205);
+}
+.grid img{
+    border: 2px solid gold;
+    border-radius: 8px;
+}
+.images:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.foot{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-hero{
+        width: 100%;
+        height: 30vh;
+    }
+    .main-img{
+        width: 100%;
+        height: 30vh;  
+    }
+}
